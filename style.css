@@ -1,6 +1,6 @@
 body {
 	font-family: 'Roboto', sans-serif;
-  margin:0;
+  	margin:0;
 	padding:0;
 }
 
@@ -8,13 +8,14 @@ body {
 	box-sizing:border-box;
 }
 
+
 .navigation {
 	position: fixed;
 	z-index:100;
 	width:100%;
 	height:50px;
 	background-color:lightgrey;
-	box-shadow:0px 2px 5px grey;
+	box-shadow:0px 2px 5px black;
 	margin:none;
 	padding:0px 20px 0 20px;
 }
@@ -59,7 +60,10 @@ body {
 #linkesfeld {
 	width:260px;
 	height:870px;
-	background-color:lightblue;
+	background-color:lightgrey;
+	z-index:50;
+	position:relative;
+	box-shadow:2px 0px 5px black;
 	float:left;
 }
 
@@ -67,27 +71,27 @@ body {
 	width:100%;
 	height:40px;
 	padding:10px;
-	background: linear-gradient(lightblue, skyblue);
+	background: linear-gradient(lightgrey, grey);
 	transition:width 0.25s ease-in;
 }
 
 .linksfeldknopp:hover {
 	width:90%;
-	border-right: 5px solid skyblue;
+	border-right: 5px solid grey;
 }
 
 #untenlinks {
-	background-color: rgb(102, 194, 255);
+	background-color: rgb(153, 153, 153);
 	width:250px;
 	height:40px;
 	margin: 5px;
-	transition:height 0.5s ease-in;
+	transition:height 0.5s ease-in-out;
 	transition:background 0.5 ease-in-out;
 }
 
 #untenlinks:hover{
 	height:400px;
-	background: linear-gradient(to bottom, rgba(102, 194, 255,1), rgba(102, 194, 255,0));
+	background: linear-gradient(to bottom, rgba(153, 153, 153,1), rgba(153, 153, 153,0));
 }
 
 .holdpics{
@@ -124,13 +128,13 @@ body {
 }
 
 .cropper img{
-  width:100%;
+  width:110%;
   transition: transform .6s ease .1s; 
   -webkit-transition:-webkit-transform .6s ease .1s;
 }
 
 .cropper:hover img{
-  transform: scale(1.5); -webkit-transform: scale(1.5);
+  transform: scale(1.2); -webkit-transform: scale(1.2);
   transition:transform .4s ease;  
 }
 
