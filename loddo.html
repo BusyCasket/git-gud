@@ -1,0 +1,106 @@
+<html>
+
+<head>
+
+<title>ÜBEN | Quick Maths</title>
+
+<meta charset="UTF-8" />
+
+<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> 
+
+<link rel="stylesheet" href="style.css" type="text/css">
+
+ <script src="javascript.js"></script> 
+
+</head>
+
+<body>
+	
+	<div class="navigation">
+		
+		<a href="index.html"><div class="navbutton floatleft" >Home</div></a>
+		
+		<a href="pics.html"><div class="navbutton floatleft" >Pictures</div></a>
+		
+		<a href="colorchange.html"><div class="navbutton floatleft" id="navcolorchange" >Color Change</div></a>
+		
+		<a href="rechner.html"><div class="navbutton floatleft" >Quick Maths</div></a>
+		
+		<a href="loddo.html"><div class="navbutton floatleft" >Loddo</div></a>
+		
+		
+		<a href="register.html"><div class="navbutton floatright" >Register</div></a>
+		
+	</div>
+	
+	<div class="undernavigation"></div>
+	
+<div class="aussenform">
+	
+	<div class="rechnerversion">
+		
+		<h1>Loddo!</h1>
+		
+		<p>
+			
+			<input size="2" maxlength="2" id="guess0" required />
+			
+			<input size="2" maxlength="2" id="guess1" required />
+			
+			<input size="2" maxlength="2" id="guess2" required />
+			
+			<input size="2" maxlength="2" id="guess3" required />
+			
+			<input size="2" maxlength="2" id="guess4" required />
+			
+			<input size="2" maxlength="2" id="guess5" required />
+			
+		</p>
+		
+		<p style="text-align:left;">Deine Zahlen: <span id="myGuess"></span></p>
+		
+		<p style="text-align:left;">Gezogene Zahlen: <span id="draws"></span></p>
+		
+		<p style="text-align:left;">Übereinstimmungen: <span id="matches"></span></p>
+		
+		<p> <button type="button" onclick="loddo()">Los!</button> </p>
+		
+		<p style="text-align:right;">Balance: <span id="balance">50</span>$</p>
+		
+	</div>
+	
+	<div class="rechnerversion">
+		
+		<h1>How to play</h1>
+		
+		<h2>Wähle sechs Zahlen von 1 - 49</h2>
+		
+		<p>(Jede Zahl darf nur <b>einmal</b> vorkommen!)</p><br>
+		
+		<h2>Jedes Spiel kostet dich 5$</h2><br>
+		
+		<h2>Gewinnsummen:</h2>
+		
+		<ul style="text-align:left;">
+			
+			<li>Eine Übereinstimmung: 5$</li>
+			
+			<li>Zwei Übereinstimmung: 25$</li>
+			
+			<li>Drei Übereinstimmung: 500$</li>
+			
+			<li>Vier Übereinstimmung: 50,000$</li>
+			
+			<li>Fünf Übereinstimmung: 5,000,000$</li>
+			
+			<li>Sechs Übereinstimmung: 500,000,000$</li>
+			
+		</ul>
+		
+	</div>
+	
+</div>
+
+</body>
+
+</html>

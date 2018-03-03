@@ -1,0 +1,78 @@
+<html>
+
+<head>
+
+<title>ÜBEN | Quick Maths</title>
+
+<meta charset="UTF-8" />
+
+<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> 
+
+<link rel="stylesheet" href="style.css" type="text/css">
+
+ <script src="javascript.js"></script> 
+
+</head>
+
+<body>
+	
+	<div class="navigation">
+		
+		<a href="index.html"><div class="navbutton floatleft" >Home</div></a>
+		
+		<a href="pics.html"><div class="navbutton floatleft" >Pictures</div></a>
+		
+		<a href="colorchange.html"><div class="navbutton floatleft" id="navcolorchange" >Color Change</div></a>
+		
+		<a href="rechner.html"><div class="navbutton floatleft" >Quick Maths</div></a>
+		
+		<a href="loddo.html"><div class="navbutton floatleft" >Loddo</div></a>
+		
+		
+		<a href="register.html"><div class="navbutton floatright" >Register</div></a>
+		
+	</div>
+	
+	<div class="undernavigation"></div>
+	
+	<div class="aussenform">
+		
+		<div class="rechnerversion">
+			
+			<h1>Rechner Ver. 1</h1>
+			
+			<p>Deine Rechnung: <input id="input1" /> <button type="button" title="Cick me" onclick="solve1()">Solve</button></p>
+			
+			<p>The result is:</p>
+			
+			<p id="result1">?</p>
+			
+			
+		</div>
+		
+		<div class="rechnerversion">
+			
+			<h1>Rechner Ver. 2</h1>
+			
+			<p> <input id="firstNumber" required /> <span id="separator"> + </span> <input id="secondNumber" required /> </p>
+			
+			<p> 
+				<button type="button" title="addition" onclick="setSeparatorAdd()">+</button> 
+				<button type="button" title="substraction" onclick="setSeparatorSub()">-</button> 
+				<button type="button" title="multiplication" onclick="setSeparatorMul()">*</button> 
+				<button type="button" title="division" onclick="setSeparatorDiv()">/</button> 
+			</p>
+			
+			<p> <button type="button" title="Cick me" onclick="solve2()">Solve</button> </p>
+			
+			<p>The result is:</p>
+			
+			<p id="result2">?</p>
+			
+		</div>
+		
+	</div>
+	
+</body>
+
+</html>

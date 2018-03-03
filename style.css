@@ -94,6 +94,17 @@ body {
 	background: linear-gradient(to bottom, rgba(153, 153, 153,1), rgba(153, 153, 153,0));
 }
 
+.rechnerversion {
+	width:100%;
+	min-height:100px;
+	padding:20px;
+	margin:20px;
+	background-color:rgb(255, 153, 51);
+	text-align:center;
+	box-shadow: 0px 5px 5px rgb(191, 191, 191);
+	border-radius: 15px;
+}
+
 .holdpics{
 	width:100%;
 	height:100%;
@@ -211,6 +222,8 @@ h1 {
 .aussenform {
 	width:400px;
 	margin:auto;
+	margin-top: 20px;
+	
 }
 
 .buttonpart {
