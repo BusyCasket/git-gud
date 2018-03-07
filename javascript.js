@@ -190,9 +190,8 @@ function checkDoubles(array, element) {
 
 
 function playAudio(){
-	
 	var cashSound = document.getElementById("cashin");
-	
+	cashSound.load();
 	cashSound.play();
 }
 
