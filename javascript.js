@@ -202,9 +202,18 @@ var dice = 0;
 var diceRolled = false;
 
 function wuerfeln() {
-	dice = Math.floor((Math.random()*6) + 1);	
-	document.getElementById("wuerfelErgebnis").innerHTML = dice;
-	diceRolled = true;
+	var k = 0;
+	var number;
+	var interval = setInterval(function() {
+		number = Math.floor(Math.random() * 6) + 1;
+		document.getElementById("wuerfelErgebnis").innerHTML = number;
+		k++;
+		if (k >= 15) {
+			clearInterval(interval);
+			dice = number;
+			diceRolled = true;
+		}
+	}, 50);
 }
 
 var currentField = 0;
