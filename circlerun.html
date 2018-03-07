@@ -1,0 +1,90 @@
+<html>
+
+<head>
+
+<title>ÜBEN | Loddo</title>
+
+<meta charset="UTF-8" />
+
+<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> 
+
+<link rel="stylesheet" href="style.css" type="text/css">
+
+ <script src="javascript.js"></script> 
+
+</head>
+
+<body>
+	
+	<div class="navigation">
+		
+		<a href="index.html"><div class="navbutton floatleft" >Home</div></a>
+		
+		<a href="pics.html"><div class="navbutton floatleft" >Pictures</div></a>
+		
+		<a href="colorchange.html"><div class="navbutton floatleft" id="navcolorchange" >Color Change</div></a>
+		
+		<a href="rechner.html"><div class="navbutton floatleft" >Quick Maths</div></a>
+		
+		<a href="loddo.html"><div class="navbutton floatleft" >Loddo</div></a>
+		
+		<a href="circlerun.html"><div class="navbutton floatleft" >Circle Run</div></a>
+		
+		
+		<a href="register.html"><div class="navbutton floatright" >Register</div></a>
+		
+	</div>
+	
+	<div class="undernavigation"></div>
+	
+	<div id="spielfeld">
+		
+		<div id="spielfeldWrapper">
+			
+			<div class="spielfeldItem">
+				<div class="spielfeldItemPlace" id="spielfeld0"></div>
+			</div>
+			
+			<div class="spielfeldItem">
+				<div class="spielfeldItemPlace" id="spielfeld1"></div>
+			</div>
+			
+			<div class="spielfeldItem">
+				<div class="spielfeldItemPlace" id="spielfeld2"></div>
+			</div>
+			
+			<div class="spielfeldItem">
+				<div class="spielfeldItemPlace" id="spielfeld7"></div>
+			</div>
+			
+			<div class="spielfeldItem" id="controlField">
+				<button type="button" onclick="wuerfeln()">Würfeln</button>
+				<p>Würfelergebnis:<br>
+					<span id="wuerfelErgebnis">?</span>
+				</p>
+				<button type="button" onclick="ziehen()">Ziehen</button>
+			</div>
+			
+			<div class="spielfeldItem">
+				<div class="spielfeldItemPlace" id="spielfeld3"></div>
+			</div>
+			
+			<div class="spielfeldItem">
+				<div class="spielfeldItemPlace" id="spielfeld6"></div>
+			</div>
+			
+			<div class="spielfeldItem">
+				<div class="spielfeldItemPlace" id="spielfeld5"></div>
+			</div>
+			
+			<div class="spielfeldItem">
+				<div class="spielfeldItemPlace" id="spielfeld4"></div>
+			</div>
+			
+		</div>
+		
+	</div>
+	
+</body>
+
+</html>
