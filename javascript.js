@@ -198,91 +198,29 @@ function playAudio(){
 
 
 // Circle Run
+var dice = 0;
+var diceRolled = false;
 
 function wuerfeln() {
-	var zahl = Math.floor((Math.random()*6) + 1);
-	var text = "";
-	
-	text += zahl;
-	
-	document.getElementById("wuerfelErgebnis").innerHTML = text;
+	dice = Math.floor((Math.random()*6) + 1);	
+	document.getElementById("wuerfelErgebnis").innerHTML = dice;
+	diceRolled = true;
 }
 
 var currentField = 0;
 
 function ziehen() {
-	
-	
-	var ziehen = document.getElementById("wuerfelErgebnis").innerHTML;
-	
-	var field = currentField;
-	
-	switch(ziehen) {
-		case "?":
+	if (!diceRolled) {
 		alert("Du musst erst würfeln!");
-		break;
-		
-		case "1":
-		field += 1;
-		break;
-		
-		case "2":
-		field += 2;
-		break;
-		
-		case "3":
-		field += 3;
-		break;
-		
-		case "4":
-		field += 4;
-		break;
-		
-		case "5":
-		field += 5;
-		break;
-		
-		case "6":
-		field += 6;
-		break;
-		
-		default:
-		alert("Irgendwas ist schiefgelaufen...");
+		return;
 	}
-	
-	
-	
-	if ((currentField + field) <= 7){
-		
-		var colorField = currentField + field;
-		
-		for (i = 0; i < 7; i++){
-			if (i == colorField) {
-				document.getElementById("spielfeld" + i).style.background.color = "red";
-				currentField = colorField;
-			} else {
-				document.getElementById("spielfeld" + i).style.background.color = "white";
-				currentField = colorField;
-			}
-		}
-		
-		
-	} else {
-		
-		colorField -= 8;
-		
-		for (i = 0; i < 7; i++){
-			if (i == colorField) {
-				document.getElementById("spielfeld" + i).style.background.color = "red";
-				currentField = colorField;
-			} else {
-				document.getElementById("spielfeld" + i).style.background.color = "white";
-				currentField = colorField;
-			}
-		}
-		
-	}
-	
+	var nextField = (currentField + dice) % 8;
+
+	document.getElementById("spielfeld" + nextField).style.backgroundColor = "red";
+	document.getElementById("spielfeld" + currentField).style.backgroundColor = "white";
+
+	currentField = nextField;
+
 	document.getElementById("wuerfelErgebnis").innerHTML = "?";
-	
+	diceRolled = false;
 }
